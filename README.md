@@ -2,23 +2,20 @@
 
 This is a machine learning project for classifying SMS messages as spam or non-spam. The project uses two different vectorization techniques: CountVectorizer and TF-IDF Vectorizer, and compares their performance using K-Nearest Neighbors (KNN) classifier.
 
-## Dataset
-The dataset can be obtained from [here](https://github.com/SmallLion/Python-Projects/blob/main/Spam-detection/spam.csv),
-which contains a collection of SMS with labels indicating whether they are spam or not spam.
-
 ## Methodology
+To begin, the initial step involved preprocessing the raw text messages, which included eliminating punctuation and stop words, and converting all text to lowercase. This preprocessing aimed to prepare the text messages for machine learning tasks. Subsequently, the preprocessed text messages were converted into numerical feature vectors using two distinct techniques: CountVectorizer and TF-IDF Vectorizer. These methods were employed to transform the text data into a suitable format for machine learning algorithms.
 
-Firstly, the raw text messages were preprocessed. The preprocessing involved removing punctuation, stop words, and converting all text to lowercase. The goal of this step was to transform the raw text messages into a format that can be used for machine learning. The preprocessed text messages were then transformed into numerical feature vectors using two different vectorization techniques: CountVectorizer and TF-IDF Vectorizer. These techniques were used to convert the text data into a format that can be used by machine learning algorithms. K-Nearest Neighbors (KNN) classifier was chosen as the model for the SMS spam classification task. This model was selected because it is a simple and effective algorithm for classification tasks. The models were trained and evaluated using the accuracy metric on both the training and test sets. 
+For the task of SMS spam classification, the K-Nearest Neighbors (KNN) classifier was selected as the model. This choice was made due to its simplicity and effectiveness in classification tasks. The models underwent training and evaluation using the accuracy metric on both the training and test datasets.
 
-Finally, the performance of the models was compared based on their accuracy on the training and test sets. The CountVectorizer with KNN classifier outperformed the TF-IDF Vectorizer with KNN classifier in terms of accuracy. The CountVectorizer with KNN model achieved an accuracy of 0.973 on the training set and 0.968 on the test set, compared to an accuracy of 0.920 on the training set and 0.916 on the test set achieved by the TF-IDF Vectorizer with KNN. Based on the results, it was concluded that the CountVectorizer with KNN classifier is more reliable and accurate in predicting the outcome of the given dataset.
+Finally, the models' performances were compared based on their accuracy on the training and test datasets. It was observed that the CountVectorizer with KNN classifier outperformed the TF-IDF Vectorizer with KNN classifier in terms of accuracy. Specifically, the CountVectorizer with KNN model attained an accuracy of 0.973 on the training set and 0.968 on the test set, whereas the TF-IDF Vectorizer with KNN achieved an accuracy of 0.920 on the training set and 0.916 on the test set. Consequently, it was deduced that the CountVectorizer with KNN classifier exhibits greater reliability and accuracy in predicting outcomes for the provided dataset.
 
 ## Results
 
-The results show that the CountVectorizer with KNN classifier outperforms the TF-IDF Vectorizer with KNN classifier. The model achieved an accuracy of 0.973 on the training set and 0.968 on the test set, compared to an accuracy of 0.920 on the training set and 0.916 on the test set achieved by the TF-IDF Vectorizer with KNN.
+The findings indicate that the CountVectorizer with KNN classifier surpasses the TF-IDF Vectorizer with KNN classifier. Specifically, the former achieved an accuracy of 0.973 on the training set and 0.968 on the test set, while the latter attained an accuracy of 0.920 on the training set and 0.916 on the test set.
 
 ## Conclusions
 
-Based on the results, it can be concluded that using CountVectorizer with KNN classifier is more reliable and accurate in predicting the outcome of the given dataset. This project can be extended further by exploring other vectorization techniques and machine learning algorithms.
+The results suggest that employing CountVectorizer with KNN classifier leads to greater reliability and accuracy in predicting the outcome of the provided dataset. This project could be expanded by investigating alternative vectorization techniques and machine learning algorithms.
 
 ## Dependencies
 
